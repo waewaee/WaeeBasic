@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.DialogActivity">
+
+    <Button
+        android:id="@+id/btnListDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Dialog"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/btnCustomAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Custom Alert Dialog"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnCustomDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Custom Dialog"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnDialogFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Dialog Fragment"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnAlertDialogFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Alert Dialog Fragment"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

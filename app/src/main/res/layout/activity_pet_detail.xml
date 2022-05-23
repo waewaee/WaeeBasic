@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/md_lime_200"
+    tools:context=".homework.PetDetailActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Detail"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textColor="@color/md_pink_A700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+
+    <TextView
+        android:id="@+id/labelColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color : "
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/labelName"/>
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/tvName"/>
+
+    <TextView
+        android:id="@+id/labelWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight in kg : "
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/labelColor"/>
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/tvColor"/>
+
+    <TextView
+        android:id="@+id/labelBirthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthdate : "
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/labelWeight"/>
+
+    <TextView
+        android:id="@+id/tvBirthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/tvWeight"/>
+
+    <TextView
+        android:id="@+id/labelGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender : "
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/labelBirthdate"/>
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/tvBirthdate"/>
+
+    <TextView
+        android:id="@+id/labelBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breed : "
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/labelGender"/>
+
+    <TextView
+        android:id="@+id/tvBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/tvGender"/>
+
+    <TextView
+        android:id="@+id/labelHasBabies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Has Babies : "
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/labelBreed"/>
+
+    <TextView
+        android:id="@+id/tvHasBabies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/tvBreed"/>
+
+    <TextView
+        android:id="@+id/labelCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condition : "
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/labelHasBabies"/>
+
+    <TextView
+        android:id="@+id/tvCondition"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/guide1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHasBabies"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
